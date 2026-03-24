@@ -1,0 +1,147 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.quote-btn {
+    background-color: #c8102e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Page Title */
+.page-title {
+    text-align: center;
+    padding: 60px 0 40px;
+    background-color: #fff;
+}
+
+.page-title h1 {
+    font-size: 36px;
+    color: #002d72; /* Dark blue corporate color */
+    margin-bottom: 20px;
+}
+
+/* Process Steps */
+.process-steps {
+    padding: 40px 0;
+}
+
+.step-row {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.step-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.step-text {
+    flex: 1;
+}
+
+.step-text h2 {
+    color: #c8102e;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.step-video {
+    flex: 1;
+}
+
+.video-placeholder {
+    width: 100%;
+    height: 300px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #002d72;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .step-row, .step-row.reverse {
+        flex-direction: column;
+    }
+    .nav-links {
+        display: none; /* Hide on mobile for simplicity */
+    }
+}
