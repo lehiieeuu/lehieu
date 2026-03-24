@@ -1,18 +1,94 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precision Chemical Machining Process</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+<body>
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+    <header id="main-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <span style="color: #c8102e; font-weight: bold; font-size: 24px;">PEI</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Capabilities</a></li>
+                    <li><a href="#">Industries</a></li>
+                    <li><a href="#">Materials</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="quote-btn">Quote</button>
+        </div>
+    </header>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+    <main>
+        <section class="page-title">
+            <div class="container">
+                <h1>Precision Chemical Machining Process</h1>
+                <p>The photochemical machining (PCM) process consists of several important steps. Each step is a
+                    critical prerequisite to the next...</p>
+            </div>
+        </section>
+
+        <section class="process-steps container">
+            <div class="step-row">
+                <div class="step-text">
+                    <h2>Photo-tool Design</h2>
+                    <p>PEI leverages the latest technology and tried and true processes to produce precise, thin metal
+                        parts, depending on the size, volume, complexity, and level of definition required...</p>
+                </div>
+                <div class="step-video">
+                    <div class="video-placeholder">Video / Image 1</div>
+                </div>
+            </div>
+
+            <div class="step-row reverse">
+                <div class="step-text">
+                    <h2>Material Prep/Cleaning</h2>
+                    <p>Once the material has been cut to the specified sheet size, it's either mechanically or
+                        chemically cleaned to remove all foreign debris, dust, grease, oil, and other contaminants...
+                    </p>
+                </div>
+                <div class="step-video">
+                    <div class="video-placeholder">Video / Image 2</div>
+                </div>
+            </div>
+
+            <div class="step-row">
+                <div class="step-text">
+                    <h2>Coating</h2>
+                    <p>The next step in the process is the application of photoresist. Because PEI uses an aqueous
+                        dry-film photoresist, we refer to it as “the coating operation.”...</p>
+                </div>
+                <div class="step-video">
+                    <div class="video-placeholder">Video / Image 3</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3>...</h3>
+                <p>...</p>
+                <p>...</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
